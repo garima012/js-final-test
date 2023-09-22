@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD TO LIST</title>
+</head>
+
+<body><center>
+    <div class="container">
+        <h1>ADD TO LIST</h1>
+        <div class="inputs"><input id=inp type="text" placeholder="Enter your list"><br><br>
+        <button onclick="add()">Add</button>
+        <button onclick="toggleBold()">Toggle Bold</button>
+    </div>
+    <div class="text" ></div>
+</div>
+</center>
+
+<script>
+    let inputs = document.getElementById("inp");
+    let text = document.querySelector(".text");
+
+    function add(){
+        if(inputs.value == ""){
+            alert("Please Enter The Value")
+        }else{
+            let newEle = document.createElement("ul");
+            newEle.innerHTML = '${inputs.value}';
+            
+            text.appendChild(newEle);
+            document.getElementById("inp").value="";
+            newEle.querySelector("i").addEventListener("click",remove);
+            
+            function remove(){
+                newEle.remove();
+            }    
+        }
+    }
+    function toggleBold(){
+        if (text.classList.length === 1){
+    text.classList.add("bold");
+   }else {
+    text.classList.remove("bold");
+   }}
+
+</script>
+</body>
+</html>

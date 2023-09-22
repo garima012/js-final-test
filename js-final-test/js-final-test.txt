@@ -1,0 +1,13 @@
+ANS1. Object is a special data type.The Object type represents one of JavaScript's data types. It is used to store various keyed collections and more complex entities. Objects can be created using the Object() constructor or the object initializer / literal syntax.
+
+
+ANS2. Loops are used to a code run again and again.Loops are execute a set of instructions or a block of code a certain number of times without having to write it again until a certain
+        conditions. 
+
+Ans3. A script will contain many lines of code. Each line of code is executed one by one from the top to the bottom. Sometimes it so happens that we would like a line of code to be executed 
+      only under certain conditions. In such cases, we should use conditional constructs. 
+					
+Ans4. Array.forEach() method return undefined.
+
+
+Ans5. Array.find() method return same length of Array to given a initial length of array.
